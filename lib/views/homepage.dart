@@ -25,10 +25,12 @@ class MyHomePage extends StatelessWidget {
         body: TabBarView(
           children: [
             HomeTab(),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Image.asset('assets/images/star.png'),
+            Image.asset('assets/images/rank.png'),
+            Image.asset('assets/images/teamicon.png'),
+            CircleAvatar(
+              backgroundImage: AssetImage('assets/images/tabpic1.png'),
+            ),
           ],
         ),
       ),
